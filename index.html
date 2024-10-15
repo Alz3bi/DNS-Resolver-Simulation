@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Resolver Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DNS Resolver Simulator</h1>
+        <input type="text" id="domainInput" placeholder="Enter a domain (e.g., m-alzoubi.me)" />
+        <button id="resolveBtn">Resolve DNS</button>
+
+        <div id="resultContainer">
+            <h2>DNS Resolution Details</h2>
+            <p><strong>IP Address:</strong> <span id="ipAddress"></span></p>
+            <p><strong>DNS Hierarchy:</strong></p>
+            <ul id="dnsHierarchy">
+                <li>Root Server: .</li>
+                <li>TLD Server: <span id="tldServer"></span></li>
+                <li>Authoritative Server: <span id="authServer"></span></li>
+            </ul>
+            <p><strong>Cached Result:</strong> <span id="cacheStatus"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
